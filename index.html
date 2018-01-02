@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blank.lu">
-  <title>小小の薄凉的博客</title>
+  <title>小小の薄凉小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="SHENZHEN UNIVERSITY 12级，擅长前端技能，热衷前端新技术。">
 <meta name="keywords" content="前端,h5,js,jquery,javascript,html5,开发者,极客,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="website">
-<meta property="og:title" content="小小の薄凉的博客">
+<meta property="og:title" content="小小の薄凉小站">
 <meta property="og:url" content="http://blank.lu/index.html">
-<meta property="og:site_name" content="小小の薄凉的博客">
+<meta property="og:site_name" content="小小の薄凉小站">
 <meta property="og:description" content="SHENZHEN UNIVERSITY 12级，擅长前端技能，热衷前端新技术。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小小の薄凉的博客">
+<meta name="twitter:title" content="小小の薄凉小站">
 <meta name="twitter:description" content="SHENZHEN UNIVERSITY 12级，擅长前端技能，热衷前端新技术。">
   
-    <link rel="alternative" href="/atom.xml" title="小小の薄凉的博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="小小の薄凉小站" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -86,9 +86,9 @@
 		        
 					<a class="weibo" target="_blank" href="http://weibo.com/2922185391/" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="rss" target="_blank" href="http://www.cnblogs.com/boliang/" title="rss"><i class="icon-rss"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:lublank@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -129,9 +129,9 @@
 			        
 						<a class="weibo" target="_blank" href="http://weibo.com/2922185391/" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="rss" target="_blank" href="http://www.cnblogs.com/boliang/" title="rss"><i class="icon-rss"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:lublank@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -159,6 +159,229 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-bitcoin04" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/11/bitcoin04/">比特币入门四</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/11/bitcoin04/" class="archive-article-date">
+  	<time datetime="2017-10-11T12:10:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Bitcoin-API"><a href="#Bitcoin-API" class="headerlink" title="Bitcoin API"></a>Bitcoin API</h3><p>交易信息json</p>
+<p>字段说明：</p>
+<pre><code>blockhash   =&gt;  块哈希
+
+blockheight =&gt;  所在区块高度
+
+blocktime    =&gt;  在区块内的时间
+
+confirmations    =&gt;  交易的确认数
+
+fees    =&gt;  交易矿工费
+
+locktime    =&gt;  接收时间
+
+size    =&gt;  交易大小
+
+time    =&gt;  广播时间
+
+txid    =&gt;  交易索引id
+
+valueIn    =&gt;  输入方的总金额
+
+valueOut    =&gt;  输出方的总金额
+
+version    =&gt;  版本
+</code></pre><p>输入方：<code>vin</code>，可能有多个。</p>
+<pre><code>addr    =&gt;  输入方的地址
+
+scriptSig    =&gt;  输入脚本
+
+asm    =&gt;  脚本asm
+
+hex    =&gt;  脚本十六进制
+
+sequence    =&gt;  输入方的序列号
+
+txid    =&gt;  每个输入方的前输出的交易索引id（with each inputs prevout txid）
+
+value    =&gt;  输入的金额
+
+vout    =&gt;  前输出的输出索引位置（prevout output index number）
+</code></pre><p>输出方：<code>vout</code>，可能有多个。</p>
+<pre><code>scriptPubKey    =&gt;  公钥脚本
+
+addresses    =&gt;  输出方的地址
+
+asm    =&gt;  脚本asm
+
+hex    =&gt;  脚本十六进制
+
+type    =&gt;  公钥哈希
+
+value    =&gt;  输出的金额
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Bitcoin</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/区块链-API//" class="article-tag-list-link color3">区块链,API</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/11/bitcoin04/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-bitcoin03" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/11/bitcoin03/">比特币入门三</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/11/bitcoin03/" class="archive-article-date">
+  	<time datetime="2017-10-11T11:57:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>比特币的安全性依赖于密钥的分散性控制，并且需要矿工们各自独立地进行交易验证。如果你想利用好比特币的安全性，你需要确保自己处于比特币的安全模型里。简而言之，不要将用户的密钥控制权拿走，不要接受非区块链交易信息。</p>
+<h3 id="比特币费用规则"><a href="#比特币费用规则" class="headerlink" title="比特币费用规则"></a>比特币费用规则</h3><p><a href="http://bitcoinfees.com/" target="_blank" rel="noopener">原文地址</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Bitcoin</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/区块链//" class="article-tag-list-link color4">区块链</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/11/bitcoin03/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Bitcoin02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -179,14 +402,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="比特币多重签名地址"><a href="#比特币多重签名地址" class="headerlink" title="比特币多重签名地址"></a>比特币多重签名地址</h2><pre><code>传统的比特币地址从数字1开头，以数字3开头的比特币地址是P2SH(Pay-to-Script Hash)地址，有时被错误的称谓多重签名或多重签名地址。
-</code></pre><blockquote>
+        <h2 id="比特币多重签名地址"><a href="#比特币多重签名地址" class="headerlink" title="比特币多重签名地址"></a>比特币多重签名地址</h2><p>传统的比特币地址从数字1开头，以数字3开头的比特币地址是P2SH(Pay-to-Script Hash)地址，有时被错误的称谓多重签名或多重签名地址。</p>
+<blockquote>
 <p>P2SH 不一定是多重签名的交易。虽然P2SH地址通常都是代表多重签名，但也可能是其他类型的交易脚本。</p>
 </blockquote>
-<h2 id="纸钱包"><a href="#纸钱包" class="headerlink" title="纸钱包"></a>纸钱包</h2><pre><code>纸钱包是打印在纸张上的比特币私钥。
-</code></pre><h2 id="比特币交易"><a href="#比特币交易" class="headerlink" title="比特币交易"></a>比特币交易</h2><pre><code>一笔交易生成、在比特币网络中得以传播和通过验证，并最终添加入全球比特币交易总账簿（比特币区块链）。
-一笔比特币交易与支票相似，需要拥有人签名和通过验证才能被认可。
-</code></pre>
+<h2 id="纸钱包"><a href="#纸钱包" class="headerlink" title="纸钱包"></a>纸钱包</h2><p>纸钱包是打印在纸张上的比特币私钥。</p>
+<h2 id="比特币交易"><a href="#比特币交易" class="headerlink" title="比特币交易"></a>比特币交易</h2><p>一笔交易生成、在比特币网络中得以传播和通过验证，并最终添加入全球比特币交易总账簿（比特币区块链）。<br>一笔比特币交易与支票相似，需要拥有人签名和通过验证才能被认可。</p>
+
       
 
       
@@ -270,8 +492,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="比特币入门一"><a href="#比特币入门一" class="headerlink" title="比特币入门一"></a>比特币入门一</h2><pre><code>比特币(BitCoin)是一种P2P形式、用去中心化、全球通用、不需第三方机构或个人，基于区块链作为支付技术的电子支付系统。 
-</code></pre><p>比特币协议数量上限为2100万个，每四年新币的开采量减半，直到2140年将会开采完。</p>
+        <p>比特币(BitCoin)是一种P2P形式、用去中心化、全球通用、不需第三方机构或个人，基于区块链作为支付技术的电子支付系统。<br>比特币协议数量上限为2100万个，每四年新币的开采量减半，直到2140年将会开采完。</p>
 <p><strong>比特币由以下构成：</strong> </p>
 <ul>
 <li>一个去中心化的点对点网络（比特币协议） </li>
@@ -425,7 +646,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 Blank
+    		&copy; 2018 Blank
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
