@@ -6,18 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blank.lu">
-  <title>Archives: 2016 | 小小の薄凉小站</title>
+  <title>CSS中的BFC | 小小の薄凉小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SHENZHEN UNIVERSITY 12级，擅长前端技能，热衷前端新技术。">
-<meta name="keywords" content="前端,h5,js,jquery,javascript,html5,开发者,极客,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小小の薄凉小站">
-<meta property="og:url" content="http://blank.lu/archives/2016/index.html">
+  <meta name="description" content="BFC: 全称：Block Formatting Context (块级格式化上下文)盒模型布局的一种CSS渲染模式。 产生BFC布局条件：浮动、绝对定位，inline-blocks, table-cells, table-captions,和overflow的值不为visible的元素。  float为left，right，inherit，initial position为absolute，fi">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS中的BFC">
+<meta property="og:url" content="http://blank.lu/2017/04/13/BFC/index.html">
 <meta property="og:site_name" content="小小の薄凉小站">
-<meta property="og:description" content="SHENZHEN UNIVERSITY 12级，擅长前端技能，热衷前端新技术。">
+<meta property="og:description" content="BFC: 全称：Block Formatting Context (块级格式化上下文)盒模型布局的一种CSS渲染模式。 产生BFC布局条件：浮动、绝对定位，inline-blocks, table-cells, table-captions,和overflow的值不为visible的元素。  float为left，right，inherit，initial position为absolute，fi">
+<meta property="og:image" content="http://oxt0lpfdn.bkt.clouddn.com/BFC-1.png">
+<meta property="og:image" content="http://oxt0lpfdn.bkt.clouddn.com/BFC-2.png">
+<meta property="og:image" content="http://oxt0lpfdn.bkt.clouddn.com/BFC-3.png">
+<meta property="og:image" content="http://oxt0lpfdn.bkt.clouddn.com/BFC-4.png">
+<meta property="og:image" content="http://oxt0lpfdn.bkt.clouddn.com/BFC-5.png">
+<meta property="og:image" content="http://oxt0lpfdn.bkt.clouddn.com/BFC-6.png">
+<meta property="og:updated_time" content="2018-01-23T02:25:06.700Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小小の薄凉小站">
-<meta name="twitter:description" content="SHENZHEN UNIVERSITY 12级，擅长前端技能，热衷前端新技术。">
+<meta name="twitter:title" content="CSS中的BFC">
+<meta name="twitter:description" content="BFC: 全称：Block Formatting Context (块级格式化上下文)盒模型布局的一种CSS渲染模式。 产生BFC布局条件：浮动、绝对定位，inline-blocks, table-cells, table-captions,和overflow的值不为visible的元素。  float为left，right，inherit，initial position为absolute，fi">
+<meta name="twitter:image" content="http://oxt0lpfdn.bkt.clouddn.com/BFC-1.png">
   
     <link rel="alternative" href="/atom.xml" title="小小の薄凉小站" type="application/atom+xml">
   
@@ -157,49 +165,222 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-BFC" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/24/hello-world/" class="archive-article-date">
-  	<time datetime="2016-11-24T11:02:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-24</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/24/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      CSS中的BFC
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2017/04/13/BFC/" class="archive-article-date">
+  	<time datetime="2017-04-13T11:47:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>BFC: 全称：Block Formatting Context (块级格式化上下文)<br>盒模型布局的一种CSS渲染模式。</p>
+<p>产生BFC布局条件：<br>浮动、绝对定位，inline-blocks, table-cells, table-captions,和overflow的值不为visible的元素。</p>
+<ul>
+<li>float为left，right，inherit，initial</li>
+<li>position为absolute，fixed，inherit，initial</li>
+<li>display为 table-cell，table-caption，inline-block，flex，inline-flex</li>
+<li>overflow为auto，hidden，inherit，initial，overlay，scroll </li>
+</ul>
+<p>想创建一个BFC盒子只需添加上面的任何一个样式即可。</p>
+<p><img src="http://oxt0lpfdn.bkt.clouddn.com/BFC-1.png" alt="BFC-图1"></p>
+<p>上图中，我们可以看到，所有属于同一个BFC的盒子都左对齐（左至右的格式），他们的左外边框紧贴着包含块的左边框。在最后一个盒子里我们可以看到尽管那里有一个浮动元素（棕色）在它的左边，另一个元素（绿色）仍然紧贴着包含块的左边框。</p>
+<p><strong>BFC导致外边距折叠</strong><br><img src="http://oxt0lpfdn.bkt.clouddn.com/BFC-2.png" alt="BFC-图2"></p>
+<p>理论上两个p元素之间的边距应该是两个外边距之和80px，但实际上是40px<br>这就是<code>外边距折叠</code><br>当相邻块元素外边距不一样时，将以最大的外边距为准。<br>原因：在同一层BFC里的块盒子会发生外边距折叠的问题</p>
+<p><strong>BFC来防止外边距折叠</strong><br><img src="http://oxt0lpfdn.bkt.clouddn.com/BFC-3.png" alt="BFC-图3"></p>
+<p>既然是因为在同一层BFC里才导致外边距折叠的，那么新建一个BFC就可以防止外边距折叠了<br>新建一个新的BFC包住第三个p元素，则与它相邻的块元素就不会外边距折叠了。</p>
+<p><strong>BFC清浮动</strong><br>浮动元素的父容器将不会有任何的高度（高度坍塌），它将不会包含已经浮动的子元素。<br>脱离页面的常规流，为了解决这个问题，通常我们使用清除浮动来解决这问题，最常用的就是使用clearfix的伪类元素。<br>但是，我们通过添加overflow: hidden，在容器中创建一个新的BFC，也可以达到这个目的。<br>在新的这个BFC中，这些浮动元素将会回到常规的文档流中。<br><img src="http://oxt0lpfdn.bkt.clouddn.com/BFC-4.png" alt="BFC-图4"></p>
+<p><strong>BFC防止文字环绕</strong><br><img src="http://oxt0lpfdn.bkt.clouddn.com/BFC-5.png" alt="BFC-图5"></p>
+<p>首先理解为什么文字会环绕？<br>一个元素浮动时盒子模型是如何工作的？<br>浮动元素兼并了块元素和内联元素的优点，使得元素不仅可以设置宽度和高度，也可以在水平方向进行排列布局。<br>脱离标准流进行排列布局，脱离标准流后的元素就不和块元素相处在同一个流不居中，使得浮动元素漂浮在正常块元素上面。但是 浮动元素虽然脱离了正常的文档流，但是依然占据正常文档流的文本空间。于是在其后面写的文本并不会被浮动元素所覆盖而是继续水平排列超出换行。除了浮动元素之外的空间为排列基准，形成了文本环绕的效果。<br><img src="http://oxt0lpfdn.bkt.clouddn.com/BFC-6.png" alt="BFC-图6"></p>
+<p><strong>总结：</strong><br>BFC特性表现就是，内部的子元素再怎么翻江倒海，怎样布局都不会影响外部的元素，所以，避免margin重叠，清除浮动什么的就能理解了吧。</p>
+<p><strong>优势：</strong></p>
+<ul>
+<li>自适应内容由于封闭，更健壮，容错性强。比方说，内部clear:both不会与兄弟float产生矛盾。而纯流体布局，clear:both会让后面内容无法和float元素在一个水平上，产生布局问题。</li>
+<li>自适应内容自动填满浮动以为区域，无需关心浮动元素宽度，可以整站大规模应用。而纯流体布局，需要大小不确定的margin/padding等值撑开合适间距，无法CSS组件化。</li>
+</ul>
+<p><strong>参考：</strong></p>
+<ol>
+<li><a href="https://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html" target="_blank" rel="noopener">https://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html</a></li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2015/02/css-deep-understand-flow-bfc-column-two-auto-layout/comment-page-1/" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/2015/02/css-deep-understand-flow-bfc-column-two-auto-layout/comment-page-1/</a></li>
+<li><a href="https://segmentfault.com/q/1010000002645174/a-1020000002646638" target="_blank" rel="noopener">https://segmentfault.com/q/1010000002645174/a-1020000002646638</a></li>
+<li><a href="http://div.io/topic/834" target="_blank" rel="noopener">http://div.io/topic/834</a></li>
+</ol>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://oxt0lpfdn.bkt.clouddn.com/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://blank.lu/2017/04/13/BFC/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/10/10/Bitcoin/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          比特币入门一
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2016/11/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -222,8 +403,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
