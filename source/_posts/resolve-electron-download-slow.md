@@ -24,13 +24,19 @@ https://sourceforge.net/projects/electron.mirror/files/
 然后将该zip文件和SHASUMS256.txt拷贝到以下目录：
 
 
-``` ~/.electron ```
+```
+~/.electron 
+```
 
-Windows下应该是该目录：``` C:\Users\xxx\.electron ```
+Windows下应该是该目录：
+
+```
+C:\Users\xxx\.electron
+```
 
 
 如下：
 
 SHASUMS256.txt-3.0.0、electron-v3.0.0-darwin-x64.zip
 
-然后就可以继续安装依赖环境了。
+接着就可以继续安装依赖环境了。
