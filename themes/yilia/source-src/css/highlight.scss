@@ -1,24 +1,24 @@
 .article-entry pre,
 .article-entry .highlight {
-  background: #272822;
+  background: #f1f1f1;
   margin: 10px 0;
   padding: 10px 10px;
   overflow: auto;
-  color: #fff;
+  color: #888;
   font-size: 0.9em;
-  line-height: 22.400000000000002px;
+  line-height: 22px;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .highlight .gutter pre .line,
 .article-entry .gist .gist-file .gist-data .line-numbers {
-  color: #666;
+  color: #bbb;
 }
 .article-entry pre,
 .article-entry code {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
 }
 .article-entry code {
-  background: #eee;
+  background: #aaa;
   padding: 0 0.3em;
   border: none;
 }
@@ -26,7 +26,7 @@
   background: none;
   text-shadow: none;
   padding: 0;
-  color: #fff;
+  color: #888;
 }
 
 .article-entry .highlight {
@@ -69,7 +69,7 @@
   text-shadow: none;
 }
 .article-entry .highlight .line {
-  color: #fff;
+  color: #888;
   min-height: 19px;
 }
 .article-entry .gist {
@@ -119,19 +119,19 @@
   text-decoration: underline;
 }
 pre .comment {
-  color: #75715e;
+  color: #afada3;
 }
 pre .keyword,
 pre .function .keyword,
 pre .class .params {
-  color: #66d9ef;
+  color: #00b0d2;
 }
 pre .tag,
 pre .doctype,
 pre .params,
 pre .function,
 pre .css .value {
-  color: #fff;
+  color: #888;
 }
 pre .css ~ * .tag,
 pre .title,
@@ -139,23 +139,23 @@ pre .at_rule,
 pre .at_rule .keyword,
 pre .preprocessor,
 pre .preprocessor .keyword {
-  color: #f92672;
+  color: #00b0d2;
 }
 pre .attribute,
 pre .built_in,
 pre .class,
 pre .css ~ * .class,
 pre .function .title {
-  color: #a6e22e;
+  color: #6ea500;
 }
 pre .value,
 pre .string {
-  color: #e6db74;
+  color: #ff8214;
 }
 pre .number {
   color: #7163d7;
 }
 pre .id,
 pre .css ~ * .id {
-  color: #fd971f;
+  color: #d46300;
 }

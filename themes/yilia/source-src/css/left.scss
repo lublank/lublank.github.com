@@ -1,5 +1,6 @@
 .left-col {
 	background: #fff;
+	box-shadow: 0 0 10px 0 #cecece;
 	width: 300px;
 	position:fixed;
 	opacity:1;
@@ -39,7 +40,6 @@
 			line-height: 25px;
 			overflow: hidden;
 			text-overflow: ellipsis;
-			display: -webkit-box;
 			-webkit-line-clamp: 2;
 			-webkit-box-orient: vertical;
 		}
