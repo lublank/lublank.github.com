@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26539ff-4ab8-4941-ba93-c0da2d9a391b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/CNAME" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/yilia/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/yilia/_config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602215478349</updated>
-      <workItem from="1602215479524" duration="573000" />
+      <workItem from="1602215479524" duration="1542000" />
     </task>
     <servers />
   </component>
@@ -57,6 +55,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1013" y="529" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602218216332">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1013" y="529" key="#com.intellij.fileTypes.FileTypeChooser/2560.0.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1602218216332" />
     <state x="852" y="255" width="1158" height="894" key="find.popup" timestamp="1602216035553">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
