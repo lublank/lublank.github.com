@@ -13,7 +13,7 @@ keywords: "前端,h5,js,jquery,javascript,html5,开发者,极客,Geek,html,css,c
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blank.lu
+url: http://lublank.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
