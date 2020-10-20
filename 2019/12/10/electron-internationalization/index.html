@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="小小の薄凉小站">
 <meta property="og:description" content="Electron项目使用i18n可以简单实现多语言。">
 <meta property="og:image" content="http://lublank.com/images/i18n.jpg">
-<meta property="og:updated_time" content="2020-10-19T14:20:32.653Z">
+<meta property="og:updated_time" content="2020-10-20T04:45:17.989Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Electron国际化多语言">
 <meta name="twitter:description" content="Electron项目使用i18n可以简单实现多语言。">
@@ -192,6 +192,7 @@ var _hmt = _hmt || [];
       
         <p>Electron项目使用i18n可以简单实现多语言。</p>
 <a id="more"></a>
+<p><img src="/images/i18n.jpg" alt="i18n"></p>
 <p><a href="https://github.com/mashpie/i18n-node" target="_blank" rel="noopener">https://github.com/mashpie/i18n-node</a></p>
 <p>在locales文件夹下</p>
 <p>添加语言包：</p>
@@ -199,7 +200,6 @@ var _hmt = _hmt || [];
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"login"</span>: <span class="string">"登录"</span>,</span><br><span class="line">  <span class="attr">"register"</span>: <span class="string">"注册"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>使用：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> i18n <span class="keyword">from</span> <span class="string">'i18n'</span>;</span><br><span class="line"><span class="comment">/* i18n config */</span></span><br><span class="line"><span class="keyword">const</span> lang = navigator.language</span><br><span class="line">i18n.configure(&#123;</span><br><span class="line">  updateFiles: <span class="literal">false</span>,</span><br><span class="line">  locales: [<span class="string">'en-US'</span>, <span class="string">'zh-CN'</span>],</span><br><span class="line">  directory: remote.require(<span class="string">'path'</span>).join(__dirname, <span class="string">'locales'</span>),</span><br><span class="line">  defaultLocale: <span class="regexp">/zh/</span>.test(lang) ? <span class="string">'zh-CN'</span> : <span class="string">'en-US'</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 切换语言</span></span><br><span class="line">i18n.setLocale(<span class="string">'en-US'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// page.js 使用</span></span><br><span class="line"><span class="keyword">import</span> i18n <span class="keyword">from</span> <span class="string">'i18n'</span>;</span><br><span class="line">&lt;div&gt;&#123;i18n.__(<span class="string">'Login'</span>)&#125;&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="http://lublank.com/images/i18n.jpg" alt="i18n"></p>
 
       
 
